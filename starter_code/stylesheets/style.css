@@ -88,7 +88,7 @@ body {
     font-size: 0.9em;
 }
 
-.header p > span {
+.header p>span {
     color: #ffd900;
     font-weight: bold;
 }
@@ -129,14 +129,14 @@ body {
     position: relative;
 }
 
-.google-button > img {
+.google-button>img {
     background-color: white;
     width: 30px;
     position: absolute;
     left: 10px;
 }
 
-.google-button > span {
+.google-button>span {
     text-align: center;
 }
 
@@ -149,7 +149,7 @@ body {
     padding: 30px;
 }
 
-.trusted-section > p {
+.trusted-section>p {
     color: black;
     text-transform: uppercase;
     font-size: 0.8em;
@@ -171,7 +171,11 @@ body {
     display: block;
 }
 
-.section-img{
+.title-section {
+    background-color: #F3EAE2;
+}
+
+.section-img {
     display: block;
     width: 100%;
 }
@@ -208,12 +212,12 @@ body {
     text-align: center;
 }
 
-#team-section > h3 {
+#team-section>h3 {
     font-size: 2em;
     text-align: center;
 }
 
-#team-section > p {
+#team-section>p {
     font-size: 1em;
     margin: 20px 0;
 }
@@ -239,7 +243,7 @@ body {
 .talk-btn {
     background-color: transparent;
     border: 2px solid #540B51;
-    color:#540B51;
+    color: #540B51;
 }
 
 .percent-container {
@@ -250,7 +254,7 @@ body {
     padding: 20px 0;
 }
 
-.percent-container > li {
+.percent-container>li {
     list-style: none;
     padding: 20px 0;
 }
@@ -272,20 +276,20 @@ body {
     background-color: #540B51;
 }
 
-#welcome-section > h3 {
+#welcome-section>h3 {
     color: white;
     text-align: center;
     margin-bottom: 25px;
     font-size: 2em;
 }
 
-#welcome-section > .try-btn {
+#welcome-section>.try-btn {
     background-color: white;
     color: #540B51;
     border: 2px solid white;
 }
 
-#welcome-section > .talk-btn {
+#welcome-section>.talk-btn {
     background-color: transparent;
     color: white;
     border: 2px solid white;
@@ -334,7 +338,7 @@ body {
     padding: 30px 0;
 }
 
-.footer-nav > li {
+.footer-nav>li {
     list-style: none;
     font-weight: 700;
     font-size: 0.9em;
@@ -357,7 +361,7 @@ body {
     padding: 0 0 20px;
 }
 
-.footer-social > li {
+.footer-social>li {
     font-size: 2em;
     list-style: none;
 }
@@ -365,4 +369,116 @@ body {
 .footer-copyright {
     padding: 20px 0;
     color: #756f75;
+}
+
+
+/* Resonsive Query Small Device */
+
+@media (min-width: 768px) {
+
+    .header {
+        background-image: url('../images/background-singup.png');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .header h1 {
+        text-align: left;
+        font-size: 4em;
+        padding: 0;
+    }
+
+    .header p {
+        text-align: left;
+    }
+
+    .header-button {
+        margin: 30px 0;
+    }
+
+    .header-img-container {
+        overflow-x: hidden;
+        position: relative;
+        right: -30px;
+    }
+
+    .header-img {
+        position: relative;
+        right: -200px;
+    }
+
+    .trusted-section {
+        padding: 100px 0;
+    }
+
+    #connectedness {
+        content: url('../images/connectedness.png');
+        width: 85%;
+    }
+
+    #flexibility {
+        content: url('../images/flexibility.png');
+        width: 85%;
+        margin-left: 15%;
+    }
+
+    #speed {
+        content: url('../images/speed.png');
+        width: 85%;
+    }
+
+    .section-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .team-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .team-btn-container .meet-btn, .team-btn-container .talk-btn {
+        width: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin: 0 10px;
+    }
+
+    .percent-container {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    .percent-container > li {
+        text-align: left;
+    }
+
+    #welcome-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #welcome-section .try-btn, #welcome-section .talk-btn {
+        max-width: 500px;
+    }
+
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
+
+    .footer-social > li {
+        margin-right: 100px;
+    }
 }
